@@ -1,0 +1,20 @@
+<div class="row">
+  <a *ngIf="card" href="#" class="col-4 col-lg-4 col-md-6 col-sm-12 col-xs-12" (click)="onClickEvent(card.name, card.phone)">
+    <div class="card">
+      <div class="info">
+        <div class="profile"><img src="../../../assets/icons/profile.png" alt="profile"></div>
+
+        <div class="contact">
+          <span>{{ card.name }}</span>
+          <span>{{ card.phone }}</span>
+        </div>
+      </div>
+
+      <div class="social" [ngClass]="socialClasses">
+        <span><img src="../../../assets/icons/skype.png" alt="skype"></span>
+        <span><img src="../../../assets/icons/phone.png" alt="phone"></span>
+        <span><img src="../../../assets/icons/mail.png" alt="mail"></span>
+      </div>
+    </div>
+  </a>
+</div>

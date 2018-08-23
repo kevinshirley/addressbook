@@ -1,0 +1,17 @@
+.fullcontainer {
+	top: 0;
+	left: 0;
+	bottom: 0;
+	margin: 0;
+	width: 100%;
+  height: 100vh;
+  background: url('../assets/img/background.jpg');
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding-bottom: 120px;
+}
+
+.hide {
+  display: none;
+}

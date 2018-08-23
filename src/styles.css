@@ -1,0 +1,32 @@
+/* You can add global styles to this file, and also import other style files */
+@font-face {
+  font-family: Brandon Grotesque Regular;
+  src: url(assets/fonts/brandon_bld-webfont.woff);
+  src: url(assets/fonts/brandon_reg-webfont.woff);
+}
+
+html, body {
+	top: 0;
+	bottom: 0;
+	margin: 0;
+	padding: 0;
+  box-sizing: border-box;
+  font-family: Brandon Grotesque Regular;
+  width: 100%;
+  height: auto;
+}
+
+html::-webkit-scrollbar {
+  width: 0px;
+}
+
+html::-webkit-scrollbar-thumb {
+  background-color: rgba(217,217,217,0.8);
+  outline: 0px solid #d9d9d9;
+}
+
+/* bootstrap reset */
+.row {
+  margin-left: 0;
+  margin-right: 0;
+}

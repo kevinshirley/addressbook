@@ -1,0 +1,17 @@
+<div class="adress-book-container">
+  <div class="adress-book-box">
+    <div class="input-container">
+      <input type="text" placeholder="Search">
+    </div>
+  
+    <div class="select-letter">
+      <div *ngFor="let letter of letters"><a href="#">{{ letter.name }}</a></div>
+    </div>
+  
+    <div class="cards container-fluid" [ngClass]="cardsClasses">
+      <div class="row">
+        <app-adress-book-card *ngFor="let card of json" [shouldSocialShow]="shouldSocialShow" [card]="card" (cardInfoObj)="onInfoSent($event)"></app-adress-book-card>
+      </div>
+    </div>
+  </div>
+</div>

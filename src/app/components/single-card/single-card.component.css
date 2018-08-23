@@ -1,0 +1,23 @@
+.hide {
+  display: none;
+}
+
+.single-card {
+  width: 100%;
+}
+
+.single-card .button-container {
+  width: 100%;
+  display: flex;
+  justify-content: flex-start;
+}
+
+.single-card .button-container button {
+  margin-top: 50px;
+  margin-bottom: 50px;
+  background: none;
+  border: none;
+  color: #fff;
+  font-size: 1.2em;
+  cursor: pointer;
+}

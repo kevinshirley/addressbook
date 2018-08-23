@@ -1,0 +1,6 @@
+<div class="single-card">
+  <div class="button-container">
+    <button (click)="returnAddressBook()" >← Return to Address Book</button>
+  </div>
+  <app-adress-book-card *ngFor="let card of singleCard" [shouldSocialShow]="shouldSocialShow" [card]="card"></app-adress-book-card>
+</div>

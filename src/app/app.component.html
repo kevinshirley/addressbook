@@ -1,0 +1,5 @@
+<div class="fullcontainer">
+  <app-main-title></app-main-title>
+  <app-adress-book [ngClass]="cardsClasses" (singleCardObj)="onCardObj($event)"></app-adress-book>
+  <app-single-card *ngIf="cardObj" [ngClass]="singleCardClasses" [cardObj]="cardObj" (viewStatus)="onViewUpdate($event)"></app-single-card>
+</div>
